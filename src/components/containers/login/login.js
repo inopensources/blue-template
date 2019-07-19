@@ -4,17 +4,18 @@ class Login extends Component {
     render() {
         return (
             <div className="container-fluid">
+                <h1>Login</h1>
                 <div>
                     {
-                        user
-                            ? <p>Hello, {user.displayName}</p>
+                        this.props.user
+                            ? <p>Hello, {this.props.user.displayName}</p>
                             : <p>Please sign in.</p>
                     }
 
                     {
-                        user
-                            ? <button onClick={signOut}>Sign out</button>
-                            : <button onClick={signInWithGoogle}>Sign in with Google</button>
+                        this.props.user
+                            ? <button onClick={() => this.props.signOut()}>Sign out</button>
+                            : <button onClick={() => this.props.signIn()}>Sign in with Google</button>
                     }
                 </div>
             </div>)
