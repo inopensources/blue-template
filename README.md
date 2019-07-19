@@ -2,5 +2,6 @@
 
 ```
 npm install
-npm start
+yarn start
+yarn build
 ```
