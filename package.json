@@ -2,18 +2,28 @@
   "name": "blue-template",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/electron.js",
+  "homepage": "./",
   "scripts": {
-    "start": "webpack-dev-server --content-base src/ --hot",
-    "build": "webpack",
-    "test": ""
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "yarn react-build && electron-builder --publish=always",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "cross-env": "5.1.6",
+    "electron-is-dev": "0.3.0",
+    "electron-log": "^2.2.6",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "update-electron-app": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -29,7 +39,13 @@
     "react-addons-test-utils": "^15.0.0-rc.2",
     "react-test-renderer": "^15.3.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "concurrently": "3.5.1",
+    "electron": "2.0.2",
+    "electron-builder": "^20.15.1",
+    "prettier": "^1.4.4",
+    "react-scripts": "1.1.4",
+    "wait-on": "2.1.0"
   },
   "jest": {
     "automock": false
