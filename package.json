@@ -1,0 +1,24 @@
+{
+  "name": "blue-template",
+  "version": "1.0.0",
+  "description": "integration template between electron and reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infarmasistemas/blue-template.git"
+  },
+  "keywords": [
+    "template",
+    "electron",
+    "reactjs"
+  ],
+  "author": "Infarma Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infarmasistemas/blue-template/issues"
+  },
+  "homepage": "https://github.com/infarmasistemas/blue-template#readme"
+}
