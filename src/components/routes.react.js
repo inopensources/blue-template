@@ -7,15 +7,13 @@ import Menu from "./menu.react";
 class Routes extends Component {
   render() {
     return (
-        <div>
-          <BrowserRouter>
-            <Switch>
-              <Route exact path='/' component={Signin}/>
-              <Route path='/dashboard' component={Dashboard}/>
-              <Route path='/menu' component={Menu}/>
-            </Switch>
-          </BrowserRouter>
-        </div>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={Signin}/>
+            <Route path='/menu' component={Menu}/>
+            <Route path='/dashboard' component={Dashboard}/>
+          </Switch>
+        </BrowserRouter>
     )
   }
 }
