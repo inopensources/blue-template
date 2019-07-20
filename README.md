@@ -112,3 +112,4 @@ example: `src` (source directory)
 - [React Scaffolder](https://github.com/99xt/react-scaffolder/blob/master);
 - [Yarn Library](https://yarnpkg.com/en/docs/install#mac-stable);
 - [React Router Dom](https://www.npmjs.com/package/react-router-dom);
+- [React-ApexChart](https://apexcharts.com/docs/react-charts/);
