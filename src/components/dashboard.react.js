@@ -41,42 +41,6 @@ class Dashboard extends Component {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="row m-b-2">
-                <div className="col-md-4 col-sm-4 col-xs-4"><h4 className="m-b-0 m-t-0">Your Cash</h4></div>
-                <div className="col-md-4 col-sm-4 col-xs-4 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 text-right">
-                  <div className="dropdown">
-                    <button className="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> USD
-                      <i className="fa m-l-1 fa-caret-down"></i></button>
-                    <ul className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownCurrency">
-                      <li><a href="#"><i className="fa fa-dollar fa-fw m-r-1 text-gray"></i>USD</a></li>
-                      <li><a href="#"><i className="fa fa-euro fa-fw m-r-1 text-gray"></i>Euro</a></li>
-                      <li><a href="#"><i className="fa fa-gbp fa-fw m-r-1 text-gray"></i>Pound</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-              <Panel />
-                <div className="col-lg-3 col-md-6 col-sm-6">
-                  <div className="panel panel-default b-a-0 shadow-box">
-                    <div className="panel-heading">Invoices</div>
-                    <div className="panel-body"><h2 className="m-t-0 f-w-300"><sup>$</sup> <span> 187.00</span></h2> <i className="fa fa-fw fa-caret-down text-danger"></i> <span>$ 3.00</span></div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
-                  <div className="panel panel-default b-a-0 shadow-box">
-                    <div className="panel-heading">Accounts Receiveable</div>
-                    <div className="panel-body"><h2 className="m-t-0 f-w-300"><sup>$</sup> <span> 530.00</span></h2> <i className="fa fa-fw fa-caret-up text-success"></i> <span>$ 681.00</span></div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
-                  <div className="panel panel-default b-a-0 shadow-box">
-                    <div className="panel-heading">Secure Holdings</div>
-                    <div className="panel-body"><h2 className="m-t-0 f-w-300"><sup>$</sup> <span> 16.00</span></h2> No Change</div>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
