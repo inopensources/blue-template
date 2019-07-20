@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import Footer from "./footer.react";
 import Menu from "./menu.react";
+import Header from "./header.react";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <Menu/>
 
         <div className="content">
