@@ -1,34 +1,39 @@
 # Blue Template
 
+<!-- [![Infarma | P&D](https://cldup.com/dTxpPi9lDf.thumb.png)](https://infarma.com.br) -->
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+
 Objectives: Create a base module of a minimalistic template for complex and robust systems, that are customizable acording to the necessities of each project. The main components will be inserted in the project to facilitate the customization.
 
 Scope: Template Customization with Components + Backend +  DevOps 
 
 Components : 
-- Spinner,
-- Dropdown,
-- Input (many),
-- Navbar,
-- Sidebar,
-- Typography,
-- Butttons,
-- Draggable Modals,
-- Toast,
-- Breadcrumbs,
-- Popovers,
-- Tables,
-- Graphs (when needed)
+> Spinner,
+> Dropdown,
+> Input (many),
+> Navbar,
+> Sidebar,
+> Typography,
+> Butttons,
+> Draggable Modals,
+> Toast,
+> Breadcrumbs,
+> Popovers,
+> Tables,
+> Graphs (when needed)
 
 Tecnologies: 
-- Electron, 
-- React, 
-- Bootstrap, 
-- JQuery
+> Electron, 
+> React, 
+> Bootstrap, 
+> JQuery
 
 ## Install
 Before run, install Yarn.
-```
-Make sure you have electron installed globally with npm i -g electron
+```sh
+npm i -g electron // If not installed
 npm install
 yarn install
 yarn start
