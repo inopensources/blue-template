@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import Footer from "./footer.react";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -201,70 +202,11 @@ class Dashboard extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-9">
-                  <div className="row m-b-2">
-                    <div className="col-md-4"><h4 className="m-b-0 ">Account Performance</h4></div>
-                    <div className="col-md-4 col-md-offset-4 text-right"></div>
-                  </div>
-                  <div className="panel panel-default b-a-0 shadow-box">
-                    <div className="panel-body">
-                      <div className="highcharts-area-with-missing-points"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3">
-                  <div className="row m-b-2">
-                    <div className="col-md-9"><h4 className="m-b-0 ">Dashboard Settings</h4></div>
-                    <div className="col-md-2 col-md-offset-2 text-right"></div>
-                  </div>
-                  <div className="panel panel-default b-a-0 shadow-box">
-                    <table className="table">
-                      <tbody>
-                      <tr>
-                        <td className="v-a-m">My Cash</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">My Cap</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Recent Fundings</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Client List</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Invoice Creator</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Invoice Generator</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Sales Lead</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Q &amp; A</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      <tr>
-                        <td className="v-a-m">Account Performance</td>
-                        <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     );
   }
