@@ -25,16 +25,10 @@ Tecnologies:
 - Bootstrap, 
 - JQuery
 
-```
-Make sure you have electron installed globally with npm i -g electron
-npm install
-yarn install
-yarn start
-yarn build
-```
 ## Install
 Before run, install Yarn.
 ```
+Make sure you have electron installed globally with npm i -g electron
 npm install
 yarn install
 yarn start
