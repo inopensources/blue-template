@@ -3,6 +3,7 @@ import React, { Component } from "react";
 class Menu extends Component {
   render() {
     return (
+		<nav className="navigation">
       <aside className="navbar-default sidebar">
         <div className="sidebar-overlay-head">
           <img src="assets/images/logo-warning-white@2X.png" alt="Logo"/>
@@ -122,6 +123,7 @@ class Menu extends Component {
           </ul>
         </div>
       </aside>
+	  </nav>
     );
   }
 }
