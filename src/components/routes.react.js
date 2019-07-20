@@ -11,11 +11,8 @@ class Routes extends Component {
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={Signin}/>
-              <Route path='/dashboard' component={Dashboard}/>
-<<<<<<< HEAD
-=======
               <Route path='/menu' component={Menu}/>
->>>>>>> b0741974afafa44f39b8b9aee8fef53274c328b7
+              <Route path='/dashboard' component={Dashboard}/>
             </Switch>
           </BrowserRouter>
         </div>
