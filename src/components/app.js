@@ -22,6 +22,8 @@ class App extends React.Component {
                     signIn={signInWithGoogle}
                     signOut={signOut}
                 />
+                <button className="btn btn-primary" type="button">aaa</button>
+                
             </div>
         );
     }
