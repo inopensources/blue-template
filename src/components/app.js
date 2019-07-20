@@ -15,9 +15,7 @@ class App extends React.Component {
         } = this.props;
 
         return (
-            <div>
-                <button className="btn btn-primary" type="button">aaa</button>
-            </div>
+          <button className="btn btn-primary">Botão</button>
         );
     }
 }
@@ -25,7 +23,7 @@ class App extends React.Component {
 const firebaseAppAuth = firebaseApp.auth();
 
 const providers = {
-    googleProvider: new firebase.auth.GoogleAuthProvider(),
+    googleProvider: new firebase.auth.GoogleAuthProvider()
 };
 
 export default withFirebaseAuth({
