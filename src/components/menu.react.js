@@ -127,7 +127,5 @@ class Menu extends Component {
   }
 }
 
-<<<<<<< HEAD
-=======
 export default Menu;
->>>>>>> 36984832ce17302a6ebc27097fb10241701162e8
+
