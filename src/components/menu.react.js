@@ -3,127 +3,143 @@ import React, { Component } from "react";
 class Menu extends Component {
   render() {
     return (
-      <aside className="navbar-default sidebar">
-        <div className="sidebar-overlay-head">
-          <img src="assets/images/logo-warning-white@2X.png" alt="Logo"/>
-          <a href="#" className="sidebar-switch action-sidebar">
-            <i className="fa fa-times"></i>
-          </a>
-        </div>
-        <div className="sidebar-logo">
-          <img className="logo-default" src="css/skarla-template/images/logo-big-warning-black@2X.png" alt="Logo" width="53"/>
-        
-        </div>
-        <div className="sidebar-content">
-          <ul className="col-sm-2 list-unstyled">
-            <li>
-              <p className="text-muted small text-uppercase"><strong> Start</strong></p>
-            </li>
-            <li className="m-l-1 ">
-              <a href="../start/overview.html" className="text-gray-lighter">
-                <span className="nav-label">Overview</span>
+      <nav className="col-md-12 d-none d-md-block bg-gray-dark sidebar">
+        <div className="sidebar-sticky">
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-home">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Dashboard <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/projects.html" className="text-gray-lighter">
-                <span className="nav-label">Projects</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-file">
+                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                  <polyline points="13 2 13 9 20 9"></polyline>
+                </svg>
+                Orders
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/analytics.html" className="text-gray-lighter">
-                <span className="nav-label">Analytics</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-shopping-cart">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                Products
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/activity-team.html" className="text-gray-lighter">
-                <span className="nav-label">Activity Team</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Customers
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/e-commerce.html" className="text-gray-lighter">
-                <span className="nav-label">E-Commerce</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-bar-chart-2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                Reports
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/financial.html" className="text-gray-lighter">
-                <span className="nav-label">Financial</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-layers">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                Integrations
               </a>
+            </li>
+          </ul>
 
-            </li>
-            <li className="m-l-1 ">
-              <a href="../start/stock.html" className="text-gray-lighter">
-                <span className="nav-label">Stock</span>
+          <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a className="d-flex align-items-center text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   className="feather feather-plus-circle">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </a>
+          </h6>
+          <ul className="nav flex-column mb-2">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-file-text">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Current month
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/performance.html" className="text-gray-lighter">
-                <span className="nav-label">Performance</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-file-text">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Last quarter
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/exchange&amp;trading.html" className="text-gray-lighter">
-                <span className="nav-label">Exchange &amp; Trading</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-file-text">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Social engagement
               </a>
             </li>
-            <li className="m-l-1 ">
-              <a href="../start/system.html" className="text-gray-lighter">
-                <span className="nav-label">System</span>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="feather feather-file-text">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Year-end sale
               </a>
-            </li>
-            <li className="m-l-1 ">
-              <a href="../start/monitor.html" className="text-gray-lighter">
-                <span className="nav-label">Monitor</span>
-              </a>
-            </li>
-
-            <li>
-              <p className="text-muted small text-uppercase m-t-2"><strong>Widgets</strong></p>
-            </li>
-            <li className="m-l-1 ">
-              <a href="../widgets/widgets.html" className="text-gray-lighter">
-                <span className="nav-label">Widgets</span>
-              </a>
-            </li>
-            <li className="m-l-1 ">
-              <a href="../graphs-widgets/widgets.html" className="text-gray-lighter">
-                <span className="nav-label">Graphs Widgets</span>
-              </a>
-            </li>
-
-            <li>
-              <p className="text-muted small text-uppercase m-t-2"><strong>Tables</strong></p>
-            </li>
-
-            <li className="m-l-1 ">
-              <a className="text-gray-lighter" href="../tables/pricing-tables.html">
-                <span className="nav-label">Pricing Tables</span>
-              </a>
-            </li>
-            <li className="m-l-1 ">
-              <a className="text-gray-lighter" href="../tables/tables.html">
-                <span className="nav-label">Tables</span>
-              </a>
-            </li>
-            <li className="m-l-1 ">
-              <a className="text-gray-lighter" href="../tables/datatables.html">
-                <span className="nav-label">Datatables</span>
-              </a>
-            </li>
-
-            <li>
-              <p className="text-muted small text-uppercase m-t-2"><strong> Grid</strong></p>
-              <ul>
-                <li className="m-l-1 ">
-                  <a className="text-gray-lighter" href="../grids/grids.html">
-                    <span className="nav-label">Grids</span>
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
-      </aside>
-
+      </nav>
     );
   }
 }
