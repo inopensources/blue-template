@@ -1749,7 +1749,7 @@ a.text-danger:focus,a.text-danger:hover{color:#a82d38}
 body.sidebar-full-height .navigation .navbar .container-fluid{padding-left:0}
 body.rtl .navigation .navbar{right:auto;left:0}
 body.rtl .navigation .sidebar{right:0;left:auto}
-.content{margin-left:250px;background-color:#EDF0F5;min-height:100vh}
+.content{background-color:#EDF0F5;min-height:100vh}
 @media (min-width:480px){.content{padding:0 1rem}
 .content>.sub-navbar{margin:0 -1rem;padding-left:1rem;padding-right:1rem}}
 @media screen and (max-width:1420px){body:not(.sidebar-disabled):not(.sidebar-big-icons):not(.sidebar-slim) .content>.container,body:not(.sidebar-disabled):not(.sidebar-big-icons):not(.sidebar-slim) .content>.sub-navbar>.container{width:100%}}
