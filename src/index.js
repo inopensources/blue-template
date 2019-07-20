@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app';
-import './index.css';
+import Signin from './components/signin.react';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Signin />, document.getElementById('root'));
