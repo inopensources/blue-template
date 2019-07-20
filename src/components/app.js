@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-
+                <button className="btn btn-primary" type="button">aaa</button>
             </div>
         );
     }

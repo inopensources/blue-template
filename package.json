@@ -18,13 +18,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "cross-env": "5.1.6",
+    "electron-is-dev": "0.3.0",
+    "electron-log": "^2.2.6",
     "firebase": "^6.3.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-with-firebase-auth": "^1.0.3",
-    "cross-env": "5.1.6",
-    "electron-is-dev": "0.3.0",
-    "electron-log": "^2.2.6",
     "update-electron-app": "^1.2.0"
   },
   "devDependencies": {
