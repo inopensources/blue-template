@@ -1,4 +1,4 @@
-# blue-template
+# Blue Template
 
 ```
 npm install
