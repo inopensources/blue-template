@@ -11,7 +11,16 @@ class Signin extends Component {
                   <div className="panel panel-default b-a-0 shadow-box">
                     <div className="panel-body">
                       <h3 className="text-center m-b-0"> Login</h3>
-                      <p className="text-center m-b-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <p className="text-center m-b-3">
+                        
+                      
+
+                        
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        
+                        
+                        
+                        </p>
                       <form className="m-t-3">
                         <div className="form-group">
                           <input className="form-control" placeholder="Enter a Username or Email..."/>
