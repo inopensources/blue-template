@@ -1,14 +1,34 @@
 # Blue Template
 
-```
-npm install
-yarn install
-yarn start
-yarn build
-```
+Objectives: Create a base module of a minimalistic template for complex and robust systems, that are customizable acording to the necessities of each project. The main components will be inserted in the project to facilitate the customization.
+
+Scope: Template Customization with Components + Backend +  DevOps 
+
+Components : 
+- Spinner,
+- Dropdown,
+- Input (many),
+- Navbar,
+- Sidebar,
+- Typography,
+- Butttons,
+- Draggable Modals,
+- Toast,
+- Breadcrumbs,
+- Popovers,
+- Tables,
+- Graphs (when needed)
+
+Tecnologies: 
+- Electron, 
+- React, 
+- Bootstrap, 
+- JQuery
+
 ## Install
 Before run, install Yarn.
 ```
+Make sure you have electron installed globally with npm i -g electron
 npm install
 yarn install
 yarn start
