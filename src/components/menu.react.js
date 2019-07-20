@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 
 class Menu extends Component {
@@ -128,4 +127,3 @@ class Menu extends Component {
 }
 
 export default Menu;
->>>>>>> ec88536aa70a1adb412e32113c069ce4b57ef1a0
