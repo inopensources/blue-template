@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class Charts extends Component {
-  constructor(props) {
-    super(props);
-
+export default class Charts extends Component {
+  render() {
     this.state = {
       options: {
         chart: {
@@ -21,18 +19,14 @@ class Charts extends Component {
         }
       ]
     };
-  }
-
-  render() {
     return (
-      <Chart
-        options={this.state.options}
-        series={this.state.series}
-        type="bar"
-        width="500"
-      />
+      <div>
+        <Chart
+          options={this.state.options}
+          series={this.state.series}
+          type="bar"
+          width="500"/>
+      </div>
     );
   }
 }
-
-export default Charts;

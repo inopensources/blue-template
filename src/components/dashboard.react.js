@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Footer from "./footer.react";
-import Chart from "./chart.react";
+import Charts from "./chart.react";
 import Menu from "./menu.react";
 import Header from "./header.react";
+
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
-
         <div className="row">
           <div className="col-lg-2">
             <Menu/>
@@ -64,7 +64,7 @@ class Dashboard extends Component {
                 <div className="panel panel-default b-gray-dark b-a-0 shadow-box">
                   <div className="panel-heading">
                     <div className="row">
-                      <Chart/>
+                      <Charts/>
                     </div>
                   </div>
                   <div className="panel-body">
