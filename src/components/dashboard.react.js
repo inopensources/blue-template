@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
-import Panel from "./panel.react";
 import Footer from "./footer.react";
 import Menu from "./menu.react";
 
@@ -30,8 +29,8 @@ class Dashboard extends Component {
     return (
       <div>
         <Menu/>
-        <div className="content">
 
+        <div className="content">
           <div className="sub-navbar sub-navbar__header">
             <div className="container">
               <div className="row">
