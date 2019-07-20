@@ -26,6 +26,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-intl": "^2.9.0",
+    "react-router-dom": "^5.0.1",
     "react-with-firebase-auth": "^1.0.3",
     "update-electron-app": "^1.2.0"
   },
