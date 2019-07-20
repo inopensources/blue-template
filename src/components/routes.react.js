@@ -4,7 +4,7 @@ import Signin from "./signin.react";
 import Dashboard from "./dashboard.react";
 import Menu from "./menu.react";
 
-class Routes extends Component {
+export default class Routes extends Component {
   render() {
     return (
         <BrowserRouter>
@@ -17,5 +17,3 @@ class Routes extends Component {
     )
   }
 }
-
-export default Routes;

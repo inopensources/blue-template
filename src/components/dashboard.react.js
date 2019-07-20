@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import Footer from "./footer.react";
 import Chart from "./chart.react";
 import Menu from "./menu.react";
+import Header from "./header.react";
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <Menu/>
 
         <div className="container">
