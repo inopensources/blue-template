@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
-Objectives: Create a base module of a minimalistic template for complex and robust systems, that are customizable acording to the necessities of each project. The main components will be inserted in the project to facilitate the customization.
+Objectives: Create a base module of a minimalistic template for complex and robust systems with Semantic HTML, Pixel Perfect CSS and I18n (Internationalization) that are customizable acording to the necessities of each project. The main components will be inserted in the project to facilitate the customization.
 
 Scope: Template Customization with Components + Backend +  DevOps 
 
