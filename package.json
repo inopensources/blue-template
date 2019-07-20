@@ -18,10 +18,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-<<<<<<< HEAD
-=======
     "bootstrap": "^4.3.1",
->>>>>>> 94ae19d9c5499b5d4bd9af9936753bac749d917e
     "cross-env": "5.1.6",
     "electron-is-dev": "0.3.0",
     "electron-log": "^2.2.6",
