@@ -3,21 +3,16 @@ import React, { Component } from "react";
 class Menu extends Component {
   render() {
     return (
-<<<<<<< HEAD
-    <nav className="navigation">
-=======
-		<nav className="navigation">
->>>>>>> eb264bf9d069c54f70b61a90f906d55bd5c96771
       <aside className="navbar-default sidebar">
         <div className="sidebar-overlay-head">
           <img src="assets/images/logo-warning-white@2X.png" alt="Logo"/>
-          <a href="#" className="sidebar-switch action-sidebar-close">
+          <a href="#" className="sidebar-switch action-sidebar">
             <i className="fa fa-times"></i>
           </a>
         </div>
         <div className="sidebar-logo">
           <img className="logo-default" src="css/skarla-template/images/logo-big-warning-black@2X.png" alt="Logo" width="53"/>
-          <img className="logo-slim" src="css/skarla-template/images/logo-slim-warning@2X.png" alt="Logo"/>
+        
         </div>
         <div className="sidebar-content">
           <ul className="col-sm-2 list-unstyled">
@@ -53,6 +48,7 @@ class Menu extends Component {
               <a href="../start/financial.html" className="text-gray-lighter">
                 <span className="nav-label">Financial</span>
               </a>
+
             </li>
             <li className="m-l-1 ">
               <a href="../start/stock.html" className="text-gray-lighter">
@@ -127,11 +123,7 @@ class Menu extends Component {
           </ul>
         </div>
       </aside>
-<<<<<<< HEAD
-    </nav>
-=======
-	  </nav>
->>>>>>> eb264bf9d069c54f70b61a90f906d55bd5c96771
+
     );
   }
 }
