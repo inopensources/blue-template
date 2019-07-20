@@ -4,6 +4,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../firebaseConfig';
 import Login from './containers/login/login.js'
+import Menu from './Component/menu.react.js'
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -13,6 +14,7 @@ class App extends React.Component {
             user,
             signOut,
             signInWithGoogle,
+            menu
         } = this.props;
 
         return (
