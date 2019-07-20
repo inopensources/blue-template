@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import Panel from "./panel.react";
 import Footer from "./footer.react";
 import Menu from "./menu.react";
 
