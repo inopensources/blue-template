@@ -18,7 +18,9 @@ class Login extends Component {
                             : <button onClick={() => this.props.signIn()}>Sign in with Google</button>
                     }
                 </div>
-            </div>)
+            </div>
+            
+            )
     };
 }
 
