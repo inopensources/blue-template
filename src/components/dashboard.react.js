@@ -1,9 +1,36 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import Chart from "react-apexcharts";
+import Footer from "./footer.react";
+import Menu from "./menu.react";
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      options: {
+        chart: {
+          id: "basic-bar"
+        },
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+        }
+      },
+      series: [
+        {
+          name: "series-1",
+          data: [30, 40, 45, 50, 49, 60, 70, 91]
+        }
+      ]
+    };
+  }
+
   render() {
     return (
+      <div>
+        <Menu/>
         <div className="content">
+
           <div className="sub-navbar sub-navbar__header">
             <div className="container">
               <div className="row">
@@ -57,7 +84,7 @@ class Dashboard extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-5">
+                  <div className="col-lg-6">
                     <div className="row m-b-2">
                       <div className="col-md-4"><h4 className="m-b-0 ">Money Map</h4></div>
                       <div className="col-md-4 col-md-offset-4 text-right"></div>
@@ -65,108 +92,17 @@ class Dashboard extends Component {
                     <div className="panel panel-default b-gray-dark b-a-0 shadow-box">
                       <div className="panel-heading">
                         <div className="row">
-                          <div className="col-md-7 col-sm-7 col-xs-7">
-                            <div className="btn-group" role="group" aria-label="...">
-                              <div className="btn-group" role="group" aria-label="...">
-                                <button type="button" className="btn btn-sm btn-default">Last Month</button>
-                                <button type="button" className="btn btn-sm btn-default">This Month</button>
-                                <button type="button" className="btn btn-sm btn-default">Today</button>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-md-3 col-sm-3 col-xs-3 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 text-right">
-                            <div className="btn-group" role="group" aria-label="...">
-                              <button type="button" className="btn btn-sm btn-default"><i className="fa fa-pie-chart"></i></button>
-                              <button type="button" className="btn btn-sm btn-default"><i className="fa fa-bar-chart"></i></button>
-                            </div>
-                          </div>
+                          <Chart
+                            options={this.state.options}
+                            series={this.state.series}
+                            type="bar"
+                            width="500"
+                          />
                         </div>
                       </div>
                       <div className="panel-body">
                         <div className="highcharts-pie-with-legend-money-map"></div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-7">
-                    <div className="row m-b-2">
-                      <div className="col-md-4 col-sm-4 col-xs-6"><h4 className="m-b-0 ">Recent Funding</h4></div>
-                      <div className="col-md-4 col-sm-4 col-xs-4 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 text-right">
-                        <button type="button" className="btn btn-sm btn-default">View All<i className="fa m-l-1 fa-angle-right"></i></button>
-                      </div>
-                    </div>
-                    <div className="panel panel-default b-a-0 shadow-box">
-                      <table className="table">
-                        <thead>
-                        <tr>
-                          <th className="small text-muted text-uppercase"><strong>Company</strong></th>
-                          <th className="small text-muted text-uppercase"><strong>Amount</strong></th>
-                          <th className="small text-muted text-uppercase"><strong>Date</strong></th>
-                          <th className="small text-right text-muted text-uppercase"><strong>Action</strong></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Watsica, Kozey and Schmeler</span></td>
-                          <td className="v-a-m"><span>$ 302.00</span></td>
-                          <td className="v-a-m"><span>12-08-2012</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Kutch, Bednar and Schimmel</span></td>
-                          <td className="v-a-m"><span>$ 986.00</span></td>
-                          <td className="v-a-m"><span>31-12-2016</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Bernhard, Kessler and Blick</span></td>
-                          <td className="v-a-m"><span>$ 104.00</span></td>
-                          <td className="v-a-m"><span>26-10-2012</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Rosenbaum - Murphy</span></td>
-                          <td className="v-a-m"><span>$ 217.00</span></td>
-                          <td className="v-a-m"><span>04-11-2015</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Champlin and Sons</span></td>
-                          <td className="v-a-m"><span>$ 961.00</span></td>
-                          <td className="v-a-m"><span>05-11-2014</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Johnson, Jerde and Kutch</span></td>
-                          <td className="v-a-m"><span>$ 405.00</span></td>
-                          <td className="v-a-m"><span>02-11-2012</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">D&apos;Amore, Sporer and Goldner</span></td>
-                          <td className="v-a-m"><span>$ 764.00</span></td>
-                          <td className="v-a-m"><span>10-06-2013</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Hoppe, McLaughlin and Okuneva</span></td>
-                          <td className="v-a-m"><span>$ 876.00</span></td>
-                          <td className="v-a-m"><span>18-03-2015</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Grant, Bednar and Kozey</span></td>
-                          <td className="v-a-m"><span>$ 392.00</span></td>
-                          <td className="v-a-m"><span>29-06-2014</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m"><span className="text-gray-darker">Quitzon, Klocko and Effertz</span></td>
-                          <td className="v-a-m"><span>$ 787.00</span></td>
-                          <td className="v-a-m"><span>20-07-2013</span></td>
-                          <td className="v-a-m text-right"><a href="#">View <i className="fa fa-angle-right"></i></a></td>
-                        </tr>
-                        </tbody>
-                      </table>
                     </div>
                   </div>
                 </div>
@@ -270,72 +206,14 @@ class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-lg-9">
-                    <div className="row m-b-2">
-                      <div className="col-md-4"><h4 className="m-b-0 ">Account Performance</h4></div>
-                      <div className="col-md-4 col-md-offset-4 text-right"></div>
-                    </div>
-                    <div className="panel panel-default b-a-0 shadow-box">
-                      <div className="panel-body">
-                        <div className="highcharts-area-with-missing-points"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="row m-b-2">
-                      <div className="col-md-9"><h4 className="m-b-0 ">Dashboard Settings</h4></div>
-                      <div className="col-md-2 col-md-offset-2 text-right"></div>
-                    </div>
-                    <div className="panel panel-default b-a-0 shadow-box">
-                      <table className="table">
-                        <tbody>
-                        <tr>
-                          <td className="v-a-m">My Cash</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">My Cap</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Recent Fundings</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Client List</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Invoice Creator</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Invoice Generator</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Sales Lead</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Q &amp; A</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        <tr>
-                          <td className="v-a-m">Account Performance</td>
-                          <td className="v-a-m text-right"><input type="checkbox" className="js-switch-small" checked/></td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+
+          <Footer/>
         </div>
-    )
+      </div>
+    );
   }
 }
 
