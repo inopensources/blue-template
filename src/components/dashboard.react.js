@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import Footer from "./footer.react";
 import Menu from "./menu.react";
+import SimpleCalendar from "./inputs/simplecalendar";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class Dashboard extends Component {
     return (
       <div>
         <Menu/>
+        <SimpleCalendar/>
 
         <div className="content">
           <div className="sub-navbar sub-navbar__header">
