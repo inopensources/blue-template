@@ -8,7 +8,7 @@ class Footer extends Component {
           <p className="text-gray">
             <strong>SKARLA Dashboard 1.0 </strong> <i className="m-r-1 text-gray-light">(HTML/JQuery Version)</i>
             <span className="text-gray">&#xA9; 2009 - 2016. Made by
-            <i className="fa fa-fw fa-heart text-danger"></i> New York, US</span>
+            <i className="fa fa-fw fa-heart text-danger"></i> Fortaleza/Ceará, BR</span>
           </p>
         </div>
       </footer>
